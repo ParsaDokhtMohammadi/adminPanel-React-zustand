@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-PrimaryBg : #05050c;
+}
+#root {
+  width: 100%;
+}
+#card::before {
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
